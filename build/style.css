@@ -59,6 +59,9 @@ h1 {
   background-color: antiquewhite;
 }
 
+.letter-box.clicked {
+  border: 2px solid orange;
+}
 .letter-box.actualgrey {
   border: 6px solid black;
 }
