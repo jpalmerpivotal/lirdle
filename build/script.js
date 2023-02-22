@@ -33,6 +33,12 @@ function initialize() {
         keyboard.addEventListener('dblclick', (e) => {
             e.stopPropagation();
         });
+        const tiles = document.getElementById("game-board");
+        tiles.addEventListener("click", (e) => {
+            if (e.target.classList.contains("letter-box")) {
+                e.target.classList.toggle("clicked")
+            }
+        })
     }
     const button = document.getElementById('shareResults');
     button.addEventListener('click', (e) => {
